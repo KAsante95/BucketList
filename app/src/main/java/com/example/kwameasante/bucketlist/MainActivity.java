@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.content.Intent;
+import android.util.Log;
 import android.graphics.Paint;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,7 +30,33 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+
+
+
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            String button_tag = extras.getString("button_tag");
+            String prev_id = extras.getString("prev_id");
+            Log.i("tag", button_tag);
+            int t_id = getResources().getIdentifier("textView" + prev_id, "id", this.getPackageName());
+            TextView t = (TextView)findViewById(t_id);
+            if(button_tag.equals("done")) {
+                t.setPaintFlags(t.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+            } else {
+                t.setPaintFlags(t.getPaintFlags() & (~Paint.STRIKE_THRU_TEXT_FLAG));
+            }
+        }
+
+    }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -55,7 +83,19 @@ public class MainActivity extends AppCompatActivity {
 
     public void strike(View view){
         TextView t = (TextView) view;
-        t.setPaintFlags(t.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+        Intent i = new Intent(getApplicationContext(), Info_Activity.class);
+        String view_id = t.getTag().toString();
+        String id_num = view_id.substring(view_id.length() - 1, view_id.length());
+
+        i.putExtra("info", id_num);
+        startActivity(i);
+        /*
+        if((t.getPaintFlags() & Paint.STRIKE_THRU_TEXT_FLAG) > 0)
+            t.setPaintFlags(t.getPaintFlags() & (~ Paint.STRIKE_THRU_TEXT_FLAG));
+        else
+            t.setPaintFlags(t.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+        */
+
     }
 
 

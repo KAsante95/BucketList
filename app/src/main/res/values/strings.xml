@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">BucketList</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_info_">Info_Activity</string>
+    <string name="info1">Films are very important, and so are festivals. Be sure to check both out simultaneously!</string>
+    <string name="info2">Fruit on a mountain. What could possibly go wrong? Probably nothing. Have fun!</string>
+    <string name="info3">Be careful near the scaffolding...</string>
+    <string name="info4">Your grandmother uses Facebook. What are you gonna be like your grandma or something? I\'m sure she\'s nice but sheesh, give it a rest.</string>
+    <string name="info5">Don\'t jump unless there\'s water below, and even then, probably don\'t jump.</string>
+    <string name="info6">This one is spooky. Don\'t attempt if you\'re not ready for spooks.</string>
+    <string name="info7">You don\'t have to read the whole book, but don\'t be a jerk and only read like a paragraph because that doesn\'t count and I\'m watching you.</string>
+    <string name="info8">You can support instead of running because running is hard and supporting is less hard.</string>
+    <string name="info9">Wait... There are ACTUALLY horses???</string>
 </resources>
