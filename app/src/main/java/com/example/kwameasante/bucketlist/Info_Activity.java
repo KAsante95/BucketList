@@ -1,6 +1,7 @@
 package com.example.kwameasante.bucketlist;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -40,10 +41,28 @@ public class Info_Activity extends AppCompatActivity {
             String info = "info" + current_id;
             int string_id = this.getResources().getIdentifier(info, "string", this.getPackageName());
             info_string = getString(string_id);
+
+            String completion = extras.getString("completed");
+
+            TextView completionText = (TextView) findViewById(R.id.completion);
+            if(completion.equals("yes")) {
+                completionText.setText("You have completed this item.");
+            } else {
+                completionText.setText("You have not completed this item.");
+            }
+            completionText.setTypeface(null, Typeface.BOLD_ITALIC);
+
+
+            String item_text = extras.getString("item_text");
+            TextView item = (TextView) findViewById(R.id.item_text);
+            item.setText(item_text);
+
+
         //    Log.i("string", info_string);
         }
 
         TextView changeView = (TextView) findViewById(R.id.info_text);
+        changeView.setTypeface(null, Typeface.ITALIC);
         changeView.setText(info_string);
 
     }

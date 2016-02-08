@@ -12,18 +12,35 @@
     tools:context="com.example.kwameasante.bucketlist.Info_Activity"
     tools:showIn="@layout/activity_info_">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/item_text"
+        android:layout_marginTop="18dp"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text=""
+        android:layout_below="@+id/item_text"
         android:id="@+id/info_text"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true"/>
 
-        android:layout_centerHorizontal="true"
-        android:clickable="true"
-        android:onClick="strike"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info_text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/completion"
+        android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true"/>
 
     <Button
         android:id="@+id/done"
@@ -31,10 +48,11 @@
         android:layout_gravity="center_vertical|center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/info_text"
+        android:layout_below="@+id/completion"
         android:layout_marginTop="20dp"
         android:text="Done!"
-        android:onClick="finish_item"/>
+        android:onClick="finish_item"
+        android:layout_centerHorizontal="true"/>
 
     <Button
         android:id="@+id/not_done"
@@ -43,9 +61,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/done"
-        android:layout_marginTop="20dp"
-        android:text="Still Working On It"
-        android:onClick="still_working"/>
+        android:layout_marginTop="10dp"
+        android:text="Not Done!"
+        android:onClick="still_working"
+        android:layout_centerHorizontal="true"/>
 
 
 </RelativeLayout>
