@@ -18,7 +18,6 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
 
-    private ArrayList<String> marked_views;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,17 +35,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        if(savedInstanceState != null) {
-            marked_views = savedInstanceState.getStringArrayList("marked_views");
-
-        }else{
-
-            marked_views = new ArrayList<String>();
-        }
-
         for (int i = 1; i < 10; i++) {
             String view_id = "textView" + Integer.toString(i);
-            if(marked_views.contains(view_id)) {
+            if(((BucketList)getApplicationContext()).marked_views.contains(view_id)) {
                 int tv_id = getResources().getIdentifier(view_id, "id", this.getPackageName());
                 TextView tv = (TextView)findViewById(tv_id);
                 tv.setPaintFlags(tv.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
@@ -69,12 +60,12 @@ public class MainActivity extends AppCompatActivity {
             TextView t = (TextView)findViewById(t_id);
             if(button_tag.equals("done")) {
                 t.setPaintFlags(t.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-                marked_views.add("textView" + prev_id);
+                ((BucketList) getApplicationContext()).marked_views.add("textView" + prev_id);
             } else {
                 t.setPaintFlags(t.getPaintFlags() & (~Paint.STRIKE_THRU_TEXT_FLAG));
-                for(int i = 0; i < marked_views.size(); i++) {
-                    if(marked_views.get(i).equals("textView" + prev_id)) {
-                        marked_views.remove(i);
+                for(int i = 0; i < ((BucketList)getApplicationContext()).marked_views.size(); i++) {
+                    if(((BucketList)getApplicationContext()).marked_views.get(i).equals("textView" + prev_id)) {
+                        ((BucketList)getApplicationContext()).marked_views.remove(i);
                     }
                 }
             }
@@ -83,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
+    /*
     @Override
     protected void onSaveInstanceState(Bundle savedInstanceState) {
         super.onSaveInstanceState(savedInstanceState);
@@ -99,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
+*/
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
