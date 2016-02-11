@@ -29,10 +29,29 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="See a Movie at the Virginia Film Festival"
                 android:id="@+id/textView1"
+
                 android:tag="textView1"
                 android:layout_centerHorizontal="true"
                 android:clickable="true"
                 android:onClick="strike"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Done!"
+                android:id="@+id/button1"
+                android:layout_below="@+id/textView1"
+                android:tag="button1"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="checkOff"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                android:layout_below="@+id/button1"/>
 
 
 
@@ -44,10 +63,31 @@
                 android:id="@+id/textView2"
                 android:tag="textView2"
                 android:layout_marginTop="35dp"
-                android:layout_below="@+id/textView1"
+                android:layout_below="@+id/button1"
                 android:layout_centerHorizontal="true"
                 android:clickable="true"
                 android:onClick="strike"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Done!"
+                android:id="@+id/button2"
+                android:layout_below="@+id/textView2"
+                android:tag="button2"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="checkOff"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                android:layout_below="@+id/button2"/>
+
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -57,10 +97,29 @@
                 android:id="@+id/textView3"
                 android:tag="textView3"
                 android:layout_marginTop="35dp"
-                android:layout_below="@+id/textView2"
+                android:layout_below="@+id/button2"
                 android:layout_centerHorizontal="true"
                 android:clickable="true"
                 android:onClick="strike"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Done!"
+                android:id="@+id/button3"
+                android:layout_below="@+id/textView3"
+                android:tag="button3"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="checkOff"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                android:layout_below="@+id/button3"/>
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -70,10 +129,29 @@
                 android:id="@+id/textView4"
                 android:tag="textView4"
                 android:layout_marginTop="35dp"
-                android:layout_below="@+id/textView3"
+                android:layout_below="@+id/button3"
                 android:layout_centerHorizontal="true"
                 android:clickable="true"
                 android:onClick="strike"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Done!"
+                android:id="@+id/button4"
+                android:layout_below="@+id/textView4"
+                android:tag="button4"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="checkOff"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                android:layout_below="@+id/button4"/>
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -83,10 +161,29 @@
                 android:id="@+id/textView5"
                 android:tag="textView5"
                 android:layout_marginTop="35dp"
-                android:layout_below="@+id/textView4"
+                android:layout_below="@+id/button4"
                 android:layout_centerHorizontal="true"
                 android:clickable="true"
                 android:onClick="strike"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Done!"
+                android:id="@+id/button5"
+                android:layout_below="@+id/textView5"
+                android:tag="button5"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="checkOff"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                android:layout_below="@+id/button5"/>
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -96,11 +193,30 @@
                 android:id="@+id/textView6"
                 android:tag="textView6"
                 android:layout_marginTop="35dp"
-                android:layout_below="@+id/textView5"
+                android:layout_below="@+id/button5"
                 android:layout_alignLeft="@+id/textView2"
                 android:layout_alignStart="@+id/textView2"
                 android:clickable="true"
                 android:onClick="strike"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Done!"
+                android:id="@+id/button6"
+                android:layout_below="@+id/textView6"
+                android:tag="button6"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="checkOff"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                android:layout_below="@+id/button6"/>
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -109,11 +225,30 @@
                 android:text="Read a book in your favorite garden"
                 android:id="@+id/textView7"
                 android:tag="textView7"
-                android:layout_below="@+id/textView6"
+                android:layout_below="@+id/button6"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="35dp"
                 android:clickable="true"
                 android:onClick="strike"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Done!"
+                android:id="@+id/button7"
+                android:layout_below="@+id/textView7"
+                android:tag="button7"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="checkOff"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                android:layout_below="@+id/button7"/>
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -123,10 +258,29 @@
                 android:id="@+id/textView8"
                 android:tag="textView8"
                 android:layout_marginTop="35dp"
-                android:layout_below="@+id/textView7"
+                android:layout_below="@+id/button7"
                 android:layout_centerHorizontal="true"
                 android:clickable="true"
                 android:onClick="strike"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Done!"
+                android:id="@+id/button8"
+                android:layout_below="@+id/textView8"
+                android:tag="button8"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="checkOff"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                android:layout_below="@+id/button8"/>
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -136,10 +290,29 @@
                 android:id="@+id/textView9"
                 android:tag="textView9"
                 android:layout_marginTop="35dp"
-                android:layout_below="@+id/textView8"
+                android:layout_below="@+id/button8"
                 android:layout_centerHorizontal="true"
                 android:clickable="true"
                 android:onClick="strike"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Done!"
+                android:id="@+id/button9"
+                android:layout_below="@+id/textView9"
+                android:tag="button9"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="checkOff"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                android:layout_below="@+id/button9"/>
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -149,10 +322,29 @@
                 android:id="@+id/textView10"
                 android:tag="textView10"
                 android:layout_marginTop="35dp"
-                android:layout_below="@+id/textView9"
+                android:layout_below="@+id/button9"
                 android:layout_centerHorizontal="true"
                 android:clickable="true"
                 android:onClick="strike"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Done!"
+                android:id="@+id/button10"
+                android:layout_below="@+id/textView10"
+                android:tag="button10"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="checkOff"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                android:layout_below="@+id/button10"/>
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -162,10 +354,29 @@
                 android:id="@+id/textView11"
                 android:tag="textView11"
                 android:layout_marginTop="35dp"
-                android:layout_below="@+id/textView10"
+                android:layout_below="@+id/button10"
                 android:layout_centerHorizontal="true"
                 android:clickable="true"
                 android:onClick="strike"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Done!"
+                android:id="@+id/button11"
+                android:layout_below="@+id/textView11"
+                android:tag="button11"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="checkOff"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                android:layout_below="@+id/button11"/>
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -175,10 +386,29 @@
                 android:id="@+id/textView12"
                 android:tag="textView12"
                 android:layout_marginTop="35dp"
-                android:layout_below="@+id/textView11"
+                android:layout_below="@+id/button11"
                 android:layout_centerHorizontal="true"
                 android:clickable="true"
                 android:onClick="strike"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Done!"
+                android:id="@+id/button12"
+                android:layout_below="@+id/textView12"
+                android:tag="button12"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="checkOff"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                android:layout_below="@+id/button12"/>
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -188,10 +418,29 @@
                 android:id="@+id/textView13"
                 android:tag="textView13"
                 android:layout_marginTop="35dp"
-                android:layout_below="@+id/textView12"
+                android:layout_below="@+id/button12"
                 android:layout_centerHorizontal="true"
                 android:clickable="true"
                 android:onClick="strike"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Done!"
+                android:id="@+id/button13"
+                android:layout_below="@+id/textView13"
+                android:tag="button13"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="checkOff"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                android:layout_below="@+id/button13"/>
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -201,10 +450,29 @@
                 android:id="@+id/textView14"
                 android:tag="textView14"
                 android:layout_marginTop="35dp"
-                android:layout_below="@+id/textView13"
+                android:layout_below="@+id/button13"
                 android:layout_centerHorizontal="true"
                 android:clickable="true"
                 android:onClick="strike"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Done!"
+                android:id="@+id/button14"
+                android:layout_below="@+id/textView14"
+                android:tag="button14"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="checkOff"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                android:layout_below="@+id/button14"/>
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -214,10 +482,29 @@
                 android:id="@+id/textView15"
                 android:tag="textView15"
                 android:layout_marginTop="35dp"
-                android:layout_below="@+id/textView14"
+                android:layout_below="@+id/button14"
                 android:layout_centerHorizontal="true"
                 android:clickable="true"
                 android:onClick="strike"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Done!"
+                android:id="@+id/button15"
+                android:layout_below="@+id/textView15"
+                android:tag="button15"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="checkOff"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                android:layout_below="@+id/button15"/>
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -227,10 +514,29 @@
                 android:id="@+id/textView16"
                 android:tag="textView16"
                 android:layout_marginTop="35dp"
-                android:layout_below="@+id/textView15"
+                android:layout_below="@+id/button15"
                 android:layout_centerHorizontal="true"
                 android:clickable="true"
                 android:onClick="strike"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Done!"
+                android:id="@+id/button16"
+                android:layout_below="@+id/textView16"
+                android:tag="button16"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="checkOff"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                android:layout_below="@+id/button16"/>
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -240,10 +546,29 @@
                 android:id="@+id/textView17"
                 android:tag="textView17"
                 android:layout_marginTop="35dp"
-                android:layout_below="@+id/textView16"
+                android:layout_below="@+id/button16"
                 android:layout_centerHorizontal="true"
                 android:clickable="true"
                 android:onClick="strike"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Done!"
+                android:id="@+id/button17"
+                android:layout_below="@+id/textView17"
+                android:tag="button17"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="checkOff"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                android:layout_below="@+id/button17"/>
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -253,10 +578,29 @@
                 android:id="@+id/textView18"
                 android:tag="textView18"
                 android:layout_marginTop="35dp"
-                android:layout_below="@+id/textView17"
+                android:layout_below="@+id/button17"
                 android:layout_centerHorizontal="true"
                 android:clickable="true"
                 android:onClick="strike"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Done!"
+                android:id="@+id/button18"
+                android:layout_below="@+id/textView18"
+                android:tag="button18"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="checkOff"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                android:layout_below="@+id/button18"/>
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -266,10 +610,29 @@
                 android:id="@+id/textView19"
                 android:tag="textView19"
                 android:layout_marginTop="35dp"
-                android:layout_below="@+id/textView18"
+                android:layout_below="@+id/button18"
                 android:layout_centerHorizontal="true"
                 android:clickable="true"
                 android:onClick="strike"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Done!"
+                android:id="@+id/button19"
+                android:layout_below="@+id/textView19"
+                android:tag="button19"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="checkOff"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                android:layout_below="@+id/button19"/>
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -279,10 +642,28 @@
                 android:id="@+id/textView20"
                 android:tag="textView20"
                 android:layout_marginTop="35dp"
-                android:layout_below="@+id/textView19"
+                android:layout_below="@+id/button19"
                 android:layout_centerHorizontal="true"
                 android:clickable="true"
                 android:onClick="strike"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Done!"
+                android:id="@+id/button20"
+                android:layout_below="@+id/textView20"
+                android:tag="button20"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="checkOff"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                android:layout_below="@+id/button20"/>
+
 
         </RelativeLayout>
     </ScrollView>

@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.TextView;
 import android.content.Intent;
 import android.util.Log;
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        for (int i = 1; i < 10; i++) {
+        for (int i = 1; i < 21; i++) {
             String view_id = "textView" + Integer.toString(i);
             if(((BucketList)getApplicationContext()).marked_views.contains(view_id)) {
                 int tv_id = getResources().getIdentifier(view_id, "id", this.getPackageName());
@@ -118,8 +119,18 @@ public class MainActivity extends AppCompatActivity {
     public void strike(View view){
         TextView t = (TextView) view;
         Intent i = new Intent(getApplicationContext(), Info_Activity.class);
+
         String view_id = t.getTag().toString();
-        String id_num = view_id.substring(view_id.length() - 1, view_id.length());
+
+        String id_num;
+        if(view_id.substring(view_id.length() - 1, view_id.length()).matches("[0-9]")
+                && view_id.substring(view_id.length() - 2, view_id.length() - 1).matches("[0-9]")) {
+
+            id_num = view_id.substring(view_id.length() - 2, view_id.length());
+
+        } else {
+            id_num = view_id.substring(view_id.length() - 1, view_id.length());
+        }
 
         String item_text = t.getText().toString();
 
@@ -144,6 +155,29 @@ public class MainActivity extends AppCompatActivity {
         else
             t.setPaintFlags(t.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
         */
+
+    }
+
+    public void checkOff(View view) {
+        Button b = (Button) view;
+
+        String button_id = b.getTag().toString();
+
+        String id_num;
+        if(button_id.substring(button_id.length() - 1, button_id.length()).matches("[0-9]")
+                && button_id.substring(button_id.length() - 2, button_id.length() - 1).matches("[0-9]")) {
+
+            id_num = button_id.substring(button_id.length() - 2, button_id.length());
+
+        } else {
+            id_num = button_id.substring(button_id.length() - 1, button_id.length());
+        }
+
+        String view_id = "textView" + id_num;
+        int tv_id = getResources().getIdentifier(view_id, "id", this.getPackageName());
+        TextView tv = (TextView)findViewById(tv_id);
+        tv.setPaintFlags(tv.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+        ((BucketList) getApplicationContext()).marked_views.add(view_id);
 
     }
 
